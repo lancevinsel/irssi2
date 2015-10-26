@@ -1,0 +1,1 @@
+../../scripts.irssi.org.git/scripts/dispatch.pl
