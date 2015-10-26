@@ -251,11 +251,12 @@ settings = {
 ignores = ( { level = "JOINS PARTS QUITS"; } );
 hilights = ( { text = "gitpicker"; nick = "no"; word = "yes"; } );
 windows = {
-  1 = { 
+  1 = {
     immortal = "yes";
     name = "(status)";
     level = "ALL";
     sticky = "yes";
+    parent = "14";
   };
   2 = {
     items = (
@@ -267,7 +268,7 @@ windows = {
       }
     );
     sticky = "yes";
-    parent = "1";
+    parent = "14";
   };
   3 = {
     items = (
@@ -279,7 +280,7 @@ windows = {
       }
     );
     sticky = "yes";
-    parent = "1";
+    parent = "14";
   };
   4 = {
     items = (
@@ -291,7 +292,7 @@ windows = {
       }
     );
     sticky = "yes";
-    parent = "1";
+    parent = "14";
   };
   5 = {
     items = (
@@ -303,7 +304,7 @@ windows = {
       }
     );
     sticky = "yes";
-    parent = "1";
+    parent = "14";
   };
   6 = {
     items = (
@@ -315,7 +316,7 @@ windows = {
       }
     );
     sticky = "yes";
-    parent = "1";
+    parent = "14";
   };
   7 = {
     items = (
@@ -327,10 +328,10 @@ windows = {
       }
     );
     sticky = "yes";
-    parent = "1";
+    parent = "14";
   };
-  8 = { sticky = "yes"; parent = "1"; };
-  9 = { sticky = "yes"; parent = "1"; };
+  8 = { sticky = "yes"; parent = "14"; };
+  9 = { sticky = "yes"; parent = "14"; };
   10 = {
     items = (
       {
@@ -341,11 +342,46 @@ windows = {
       }
     );
     sticky = "yes";
-    parent = "1";
+    parent = "14";
   };
   11 = { name = "hilight"; sticky = "yes"; };
+  12 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#smlr";
+        tag = "freenode";
+      }
+    );
+    sticky = "yes";
+    parent = "14";
+  };
+  13 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#knoppix";
+        tag = "freenode";
+      }
+    );
+    sticky = "yes";
+    parent = "14";
+  };
+  14 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#ansible";
+        tag = "freenode";
+      }
+    );
+    sticky = "yes";
+  };
 };
 mainwindows = {
-  1 = { first_line = "6"; lines = "45"; };
+  14 = { first_line = "6"; lines = "45"; };
   11 = { first_line = "1"; lines = "5"; };
 };
